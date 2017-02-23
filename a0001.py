@@ -5,4 +5,6 @@ from classFounder import FounderBaseClass
 
 a = FounderBaseClass()
 a.name='1234312'
-a.printName()
+a.print_name()
+
+
