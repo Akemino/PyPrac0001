@@ -10,5 +10,3 @@ class FounderSampleClass(FounderBaseClass):
 
     def __init__(self):
         super().__init__()
-
-
