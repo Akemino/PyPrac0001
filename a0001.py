@@ -2,7 +2,7 @@
 当ファイルの説明文を記述
 """
 # import time
-from classSampleFounder import FounderSampleClass
+from FounderSampleClass import FounderSampleClass
 
 # a = FounderBaseClass()
 # a.name = '1234312'

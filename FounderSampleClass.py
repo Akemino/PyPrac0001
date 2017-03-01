@@ -3,7 +3,7 @@
 当ファイルの説明文を記述
 """
 
-from classFounder import FounderBaseClass
+from FounderBaseClass import FounderBaseClass
 
 class FounderSampleClass(FounderBaseClass):
     """Classの継承サンプル"""
