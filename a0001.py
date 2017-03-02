@@ -5,7 +5,6 @@
 from FounderSampleClass import FounderSampleClass
 
 
-
 # a = FounderBaseClass()
 # a.name = '1234312'
 # a.print_name()
@@ -16,9 +15,6 @@ def main():
     mar_sample.name = 'sampleSubClass'
     mar_sample.print_name()
 
-
-def debug_set_company():
-    """仮の会社を設定"""
 
 
 
