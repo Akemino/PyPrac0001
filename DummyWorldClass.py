@@ -13,7 +13,7 @@ class DummyWorldClass:
     def __init__(self):
         """"""
 
-    def load_company_price_list(self):
+    def load_company_price_list(self, csv_path):
         """会社と価格の一覧を読み込みます。"""
 
         i = 1

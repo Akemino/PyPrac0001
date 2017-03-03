@@ -12,14 +12,14 @@ from DummyWorldClass import DummyWorldClass
 def main():
     """メイン処理"""
 
-    setting = []
+    setting_main = []
     inifile = ConfigParser.SafeConfigParser()
     inifile.read('./setting.ini')
     for key in inifile.options('main'):
-        setting[key] = inifile.get('main', key)
+        setting_main[key] = inifile.get('main', key)
 
     world = DummyWorldClass()
-    world.load_company_price_list()
+    #world.load_company_price_list(setting_main['csvPath'])
 
     # mar_sample = FounderSampleClass()
     # mar_sample.name = 'sampleSubClass'
