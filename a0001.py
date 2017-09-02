@@ -2,7 +2,7 @@
 当ファイルの説明文を記述
 """
 # import time
-import ConfigParser
+import configparser
 from DummyWorldClass import DummyWorldClass
 
 
@@ -12,22 +12,17 @@ from DummyWorldClass import DummyWorldClass
 def main():
     """メイン処理"""
 
-    setting_main = []
-    inifile = ConfigParser.SafeConfigParser()
-    inifile.read('./setting.ini')
+    setting_main = {}
+    inifile = configparser.SafeConfigParser()
+    inifile.read('./setting.ini',encoding='utf-8')
     for key in inifile.options('main'):
         setting_main[key] = inifile.get('main', key)
 
     world = DummyWorldClass()
-    #world.load_company_price_list(setting_main['csvPath'])
+    world.load_company_price_list(setting_main['csv_path'])
 
     # mar_sample = FounderSampleClass()
     # mar_sample.name = 'sampleSubClass'
     # mar_sample.print_name()
-
-    
-
-
-
 
 main()
