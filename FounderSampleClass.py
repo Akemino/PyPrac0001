@@ -10,3 +10,9 @@ class FounderSampleClass(FounderBaseClass):
 
     def __init__(self):
         super().__init__()
+
+    def forecast_by_date(self, ymd_from):
+        """指定した日付毎にスコア一覧を作成します。"""
+
+        
+        

@@ -12,11 +12,13 @@ class FounderBaseClass:
 
     def __init__(self):
         """コンストラクタ。特に何もしません"""
-        print("FounderBaseClass init")
+        # print("FounderBaseClass init")
 
     def print_name(self):
         """名称を表示します。テスト用の関数。"""
-        print(self.name)
+        # print(self.name)
 
-    def forecast_by_date(self, ymd):
+    def forecast_by_date(self, ymd_from):
         """指定した日付毎にスコア一覧を作成します。"""
+        
+
