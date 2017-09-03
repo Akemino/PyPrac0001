@@ -3,6 +3,7 @@
 """
 # import time
 import configparser
+import gl
 from DummyWorldClass import DummyWorldClass
 
 
@@ -12,15 +13,21 @@ from DummyWorldClass import DummyWorldClass
 def main():
     """メイン処理"""
 
-    setting_main = {}
+    # gl.setting_main
+
     inifile = configparser.SafeConfigParser()
-    inifile.read('./setting.ini',encoding='utf-8')
+    inifile.read('./setting.ini', encoding='utf-8')
     for key in inifile.options('main'):
-        setting_main[key] = inifile.get('main', key)
+        gl.setting_main[key] = inifile.get('main', key)
 
+    # CSVから価格推移を読み込む
     world = DummyWorldClass()
-    world.load_company_price_list(setting_main['csv_path'])
+    world.load_company_price_list(gl.setting_main['csv_path'])
 
+    # 投資する人のリストを作成
+    
+    print("DEBUG")
+    print(gl.company_list["1327-T"].price_daily_list["20170822"].start_price)
     # mar_sample = FounderSampleClass()
     # mar_sample.name = 'sampleSubClass'
     # mar_sample.print_name()
