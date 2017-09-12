@@ -2,6 +2,7 @@
 """
 会社。
 """
+from PriceDailyClass import PriceDailyClass
 
 class CompanyClass:
     """会社クラス。"""

@@ -29,9 +29,8 @@ def main():
     gc1.name = "7-25型"
     
 
-
-    print("DEBUG")
-    print(gl.company_list["1327-T"].price_daily_list["20170822"].start_price)
+    # print("DEBUG")
+    # print(gl.company_list["1327-T"].price_daily_list["20170822"].start_price)
 
 
     # mar_sample = FounderSampleClass()

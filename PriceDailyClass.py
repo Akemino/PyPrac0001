@@ -8,8 +8,8 @@ import datetime
 class PriceDailyClass:
     """価格変動一日分の構造体"""
 
-    ymd = datetime.datetime(2001, 1, 1)
-    """いつの情報か"""
+    ymd = "00000000" # type: str
+    """いつの情報か。YYYYMMDDのstr型。"""
 
     start_price = 0
     """始値"""
@@ -25,7 +25,7 @@ class PriceDailyClass:
 
     def __init__(self):
         """"""
-        print("")
+        # print("")
 
     def set_price(self, st_price, en_price, ma_price, mi_price):
         """

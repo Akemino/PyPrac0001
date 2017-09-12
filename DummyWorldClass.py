@@ -42,7 +42,7 @@ class DummyWorldClass:
             repatter = re.compile(pattern)
             matched = repatter.search(csv_path)
             ymd = matched.group(1).replace("-","")
-            print(ymd)
+            # print(ymd)
 
             with open(os.path.join(csv_dir_path, csv_path), 'r',encoding='shift_jis') as f:
                 reader = csv.reader(f)
