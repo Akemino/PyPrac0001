@@ -12,7 +12,6 @@ from PriceDailyClass import PriceDailyClass
 
 class DummyWorldClass:
     """仮想化した世界クラス"""
-    company_list = []
 
     def __init__(self):
         """"""
@@ -30,6 +29,7 @@ class DummyWorldClass:
         COL_MAX_PRICE = 5
         COL_MIN_PRICE = 6
 
+        
         files = os.listdir(csv_dir_path)
         files_file = [f for f in files if os.path.isfile(os.path.join(csv_dir_path, f))]
 
@@ -71,20 +71,3 @@ class DummyWorldClass:
                     gl.company_list[row[COL_CODE]].price_daily_list[ymd] = price
 
                 #gl.company_list に価格と会社を登録しおえた
-
-
-
-
-
-
-
-
-
-        #while i < 100:
-        #    i = i + 1
-        #    new_comp = CompanyBaseClass()
-        #    new_comp.name = "COMPANY_" + '{0:04d}'.format(i)
-        #    new_price = PriceDailyClass()
-        #    new_price.ymd = ""
-        #    new_price.set_price(40, 90, 120, 24)
-        #    new_comp.price_daily_list.append(new_price)

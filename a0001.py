@@ -5,7 +5,7 @@
 import configparser
 import gl
 from DummyWorldClass import DummyWorldClass
-
+from FounderGcClass import FounderGcClass
 
 # a = FounderBaseClass()
 # a.name = '1234312'
@@ -25,9 +25,15 @@ def main():
     world.load_company_price_list(gl.setting_main['csv_path'])
 
     # 投資する人のリストを作成
+    gc1 = FounderGcClass()
+    gc1.name = "7-25型"
     
+
+
     print("DEBUG")
     print(gl.company_list["1327-T"].price_daily_list["20170822"].start_price)
+
+
     # mar_sample = FounderSampleClass()
     # mar_sample.name = 'sampleSubClass'
     # mar_sample.print_name()

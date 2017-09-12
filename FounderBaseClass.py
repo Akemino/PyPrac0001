@@ -6,7 +6,7 @@
 class FounderBaseClass:
     """Founderの基底クラス"""
 
-    name = ''
+    name = '' # type: str
     """設定必須"""
 
 

@@ -6,13 +6,13 @@
 class CompanyClass:
     """会社クラス。"""
 
-    name = ''
+    name = '' # type: str
     """名称。銘柄名。設定必須"""
 
-    code = ''
+    code = '' # type: str
     """コード。被らない。"""
 
-    price_daily_list = {}
+    price_daily_list = {} # type: List[PriceDailyClass]
     """"""
 
     def __init__(self):
